@@ -1,5 +1,13 @@
+import Hero from "../../components/Hero/Hero";
+import HeroTitle from "../../components/HeroTitle/HeroTitle";
+
 const HomePage = () => {
-  return <h1>Tattoo arena</h1>;
+  return (
+    <>
+      <HeroTitle />
+      <Hero />
+    </>
+  );
 };
 
 export default HomePage;
