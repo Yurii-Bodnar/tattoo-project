@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import bg from "../../assets/images/background.JPG";
 
-export const Container = styled.section`
-  position: relative;
-`;
-export const Bg = styled.div`
+export const BgImg = styled.div`
   display: flex;
   background-image: linear-gradient(
       to right,
@@ -15,20 +12,22 @@ export const Bg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
-  /* filter: blur(7px); */
+  height: 100vh;
   position: relative;
 `;
-export const Wrapper = styled.div`
-  position: absolute;
+export const Container = styled.div`
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 100%;
+  transform: translate(-50%, -40%);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
+  gap: 10px;
+  z-index: 1;
+  position: absolute;
+  background-color: ${(p) => p.theme.colors.transparent};
+  padding: 15px;
   &::before {
     content: "";
     position: absolute;
@@ -47,24 +46,22 @@ export const Wrapper = styled.div`
     right: 0;
     background-color: ${(p) => p.theme.colors.white};
   }
-`;
-export const Logo = styled.svg`
-  fill: ${(p) => p.theme.colors.white};
-  width: 300px;
-  height: 150px;
   @media screen and (max-width: 1279px) {
-    width: 95px;
-    height: 75px;
+    transform: translate(-21%, -42%);
+    left: 30%;
   }
 `;
-export const Title = styled.h1`
-  font-size: ${(p) => p.theme.fontSizes.xxl};
-  font-family: ${(p) => p.theme.fonts.secondary};
-  /* font-family: "Futurist Fixed-width", sans-serif; */
-  font-weight: ${(p) => p.theme.fontWeights.l};
+export const Title = styled.h2`
+  font-family: ${(p) => p.theme.fonts.reserveSecond};
+  font-size: ${(p) => p.theme.fontSizes.l};
+  font-weight: ${(p) => p.theme.fontWeights.m};
   color: ${(p) => p.theme.colors.white};
-  @media screen and (max-width: 1279px) {
-    padding-right: 10px;
-    font-size: ${(p) => p.theme.fontSizes.xl};
-  }
+`;
+export const Text = styled.p`
+  font-family: ${(p) => p.theme.fonts.reserve};
+  font-size: ${(p) => p.theme.fontSizes.xs};
+  font-weight: ${(p) => p.theme.fontWeights.s};
+  color: ${(p) => p.theme.colors.white};
+  text-align: center;
+  line-height: 1.5;
 `;

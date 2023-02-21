@@ -1,5 +1,11 @@
+import MasterFirst from "../../components/Master/Master";
+
 const MastersPage = () => {
-  return <h1>MastersPage</h1>;
+  return (
+    <>
+      <MasterFirst />
+    </>
+  );
 };
 
 export default MastersPage;

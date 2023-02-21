@@ -1,11 +1,14 @@
-import { Bg, Container, Title, Wrapper } from "./HeroTitle.styled";
-
+import { Bg, Container, Title, Wrapper, Logo } from "./HeroTitle.styled";
+import iconLogo from "../../assets/images/sprite.svg";
 const HeroTitle = () => {
   return (
     <Container>
       <Bg></Bg>
       <Wrapper>
-        <Title>Tattoo arena</Title>
+        <Title>TATTOO TO</Title>
+        <Logo>
+          <use href={iconLogo + "#icon-logo"}></use>
+        </Logo>
       </Wrapper>
     </Container>
   );
