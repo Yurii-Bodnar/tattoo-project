@@ -32,7 +32,7 @@ export const Wrapper = styled.div`
   opacity: 0.8;
   @media screen and (max-width: 1279px) {
     padding: 0px 15px;
-    justify-content: center;
+    /* justify-content: center; */
   }
 `;
 export const Logo = styled(NavLink)``;
@@ -45,12 +45,13 @@ export const LogoIcon = styled.svg`
     padding-right: 10px;
   }
 `;
-export const MainWrap =styled.div`
-display: flex;
-`
+export const MainWrap = styled.div`
+  display: flex;
+`;
 export const Nav = styled.nav`
   display: flex;
   gap: 125px;
+  margin: 0 auto;
   @media screen and (max-width: 1279px) {
     gap: 40px;
   }

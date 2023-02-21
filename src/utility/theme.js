@@ -25,6 +25,7 @@ export const theme = {
     l: "20px",
     xl: "70px",
     xxl: "106px",
+    xxll: "90px",
   },
   fontWeights: {
     s: "400",

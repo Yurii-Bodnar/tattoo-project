@@ -6,6 +6,7 @@ import {
   Text,
   Title,
   TitleSubText,
+  TitleText,
 } from "./CarePage.styled";
 
 const CarePage = () => {
@@ -15,7 +16,7 @@ const CarePage = () => {
       <div>
         <Container>
           <Title>ДОГЛЯД ЗА ТАТУ</Title>
-          <TitleSubText>(з наклеюванням плівки)</TitleSubText>
+          <TitleText>(з наклеюванням плівки)</TitleText>
           <Text>
             Після сеансу майстер клеїть спеціальну захисну загоюючу плівку на
             тату.
@@ -62,7 +63,7 @@ const CarePage = () => {
         </Container>
         <Box>
           <Title>ДОГЛЯД ЗА ТАТУ</Title>
-          <TitleSubText>(без наклювання плівки)</TitleSubText>
+          <TitleText>(без наклювання плівки)</TitleText>
           <Text>Після сеансу майстер закриває свіже татуювання пеленкою.</Text>
           <Text>
             Далі Вам слід придбати

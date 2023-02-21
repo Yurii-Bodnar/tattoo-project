@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
 `;
 export const Logo = styled.svg`
   fill: ${(p) => p.theme.colors.white};
-  width: 300px;
+  width: 200px;
   height: 150px;
   @media screen and (max-width: 1279px) {
     width: 95px;
@@ -60,11 +60,13 @@ export const Logo = styled.svg`
 export const Title = styled.h1`
   font-size: ${(p) => p.theme.fontSizes.xxl};
   font-family: ${(p) => p.theme.fonts.secondary};
-  /* font-family: "Futurist Fixed-width", sans-serif; */
+  letter-spacing: -10px;
+  margin-right: 140px;
   font-weight: ${(p) => p.theme.fontWeights.l};
   color: ${(p) => p.theme.colors.white};
   @media screen and (max-width: 1279px) {
-    padding-right: 10px;
+    letter-spacing: -6px;
+    margin-right: 60px;
     font-size: ${(p) => p.theme.fontSizes.xl};
   }
 `;

@@ -59,7 +59,7 @@ export const Title = styled.h2`
   font-size: ${(p) => p.theme.fontSizes.l};
   font-weight: ${(p) => p.theme.fontWeights.m};
   color: ${(p) => p.theme.colors.white};
-
+  text-align: center;
   /* text-align: center; */
 `;
 export const TitleSubText = styled.p`
@@ -67,7 +67,7 @@ export const TitleSubText = styled.p`
   font-size: ${(p) => p.theme.fontSizes.s};
   color: ${(p) => p.theme.colors.main};
   /* text-align: center; */
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 `;
 export const Text = styled.p`
   font-family: ${(p) => p.theme.fonts.reserve};
@@ -75,6 +75,13 @@ export const Text = styled.p`
   font-weight: ${(p) => p.theme.fontWeights.s};
   color: ${(p) => p.theme.colors.white};
   /* text-align: center; */
+`;
+export const TitleText = styled.p`
+  font-family: ${(p) => p.theme.fonts.reserve};
+  font-size: ${(p) => p.theme.fontSizes.xs};
+  font-weight: ${(p) => p.theme.fontWeights.s};
+  color: ${(p) => p.theme.colors.main};
+  text-align: center;
 `;
 export const AccentWord = styled.span`
   color: ${(p) => p.theme.colors.main};
