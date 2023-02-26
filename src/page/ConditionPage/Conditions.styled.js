@@ -12,22 +12,19 @@ export const BgImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0 30px;
+  /* position: relative; */
 `;
 export const Container = styled.div`
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 10px;
-  z-index: 1;
-  position: absolute;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: ${(p) => p.theme.colors.transparent};
   padding: 15px;
+  position: relative;
   &::before {
     content: "";
     position: absolute;
@@ -47,8 +44,7 @@ export const Container = styled.div`
     background-color: ${(p) => p.theme.colors.white};
   }
   @media screen and (max-width: 1279px) {
-    transform: translate(-21%, -42%);
-    left: 30%;
+    width: 75%;
   }
 `;
 export const Title = styled.h2`
@@ -56,12 +52,25 @@ export const Title = styled.h2`
   font-size: ${(p) => p.theme.fontSizes.l};
   font-weight: ${(p) => p.theme.fontWeights.m};
   color: ${(p) => p.theme.colors.white};
+  width: 100%;
 `;
 export const Text = styled.p`
+  /* display: flex; */
+  flex-direction: column;
   font-family: ${(p) => p.theme.fonts.reserve};
   font-size: ${(p) => p.theme.fontSizes.xs};
   font-weight: ${(p) => p.theme.fontWeights.s};
   color: ${(p) => p.theme.colors.white};
-  text-align: center;
+  /* text-align: center; */
   line-height: 1.5;
+  width: 100%;
+`;
+export const TextAccent = styled.span`
+  /* display: flex; */
+  font-family: ${(p) => p.theme.fonts.reserve};
+  font-size: ${(p) => p.theme.fontSizes.s};
+  color: ${(p) => p.theme.colors.main};
+  /* box-shadow: 2px -1px 4px 4px; */
+  /* margin-bottom: 10px; */
+  /* border-bottom: 1px solid ${(p) => p.theme.colors.white}; */
 `;

@@ -19,7 +19,7 @@ export const List = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 84px 2.5vw 20px;
+  padding: 90px 2.5vw 20px;
   gap: 40px;
   align-items: flex-start;
 `;

@@ -7,7 +7,8 @@ export const theme = {
     main: "#995f45",
     reserve: "#272727",
     secondReserve: "#262424",
-    transparent: "#37303052",
+    // transparent: "#37303052",
+    transparent: "#00000052",
   },
   space: {
     paddingTopBottom: "65px",
