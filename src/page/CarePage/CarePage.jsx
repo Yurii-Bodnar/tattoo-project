@@ -5,7 +5,6 @@ import {
   Container,
   Text,
   Title,
-  TitleSubText,
   TitleText,
   Wrapper,
 } from "./CarePage.styled";

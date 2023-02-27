@@ -1,4 +1,4 @@
-import db from "../../db";
+// import db from "../../db";
 import { BgImg, Container, Text, TextAccent, Title } from "./Conditions.styled";
 
 const ConditionsPage = () => {

@@ -18,7 +18,7 @@ import { useContext, useEffect, useState } from "react";
 import { masterContext } from "../../App";
 import { useLocation } from "react-router-dom";
 
-const MasterFirst = () => {
+const Master = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
   const location = useLocation();
@@ -110,4 +110,4 @@ const MasterFirst = () => {
   );
 };
 
-export default MasterFirst;
+export default Master;

@@ -41,7 +41,6 @@ export const Box = styled.div`
   background-color: ${(p) => p.theme.colors.transparent};
   padding: 15px;
   width: 50vw;
-  /* height: 352px; */
   padding-bottom: 33px;
 
   @media screen and (max-width: 1279px) {
@@ -53,12 +52,14 @@ export const Title = styled.h2`
   font-size: ${(p) => p.theme.fontSizes.l};
   font-weight: ${(p) => p.theme.fontWeights.m};
   color: ${(p) => p.theme.colors.white};
+  line-height: 1.5;
   text-align: center;
   width: 100%;
 `;
 export const TitleSubText = styled.p`
   font-family: ${(p) => p.theme.fonts.reserve};
   font-size: ${(p) => p.theme.fontSizes.s};
+  line-height: 1.5;
   color: ${(p) => p.theme.colors.main};
   width: 100%;
   height: 100%;
@@ -68,6 +69,7 @@ export const Text = styled.p`
   font-family: ${(p) => p.theme.fonts.reserve};
   font-size: ${(p) => p.theme.fontSizes.xs};
   font-weight: ${(p) => p.theme.fontWeights.s};
+  line-height: 1.5;
   color: ${(p) => p.theme.colors.white};
   /* text-align: center; */
 `;
