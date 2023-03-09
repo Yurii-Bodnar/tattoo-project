@@ -1,6 +1,6 @@
 // import { useMediaQuery } from "react-responsive";
 import icons from "../../assets/images/sprite.svg";
-import { useIsDesktop, useIsTablet } from "../../utility/hooks";
+import { useIsDesktop, useIsMobile, useIsTablet } from "../../utility/hooks";
 import {
   Box,
   Container,
@@ -20,9 +20,6 @@ import {
 } from "./Footer.styled";
 
 const Footer = () => {
-  // const isMobile = useMediaQuery({ maxWidth: 767 });
-  // const isTablet = () => useMediaQuery({ maxWidth: 1279 });
-
   return (
     <FooterWrap>
       <Wrapper>
@@ -148,7 +145,7 @@ const Footer = () => {
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d643.6227016311029!2d24.0186298!3d49.8144399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae792bcf6bd6d%3A0x8387dd1e6cd74249!2z0JPQsNC70LHRg9C0LCDQktCQ0KI!5e0!3m2!1sru!2sua!4v1675788185289!5m2!1sru!2sua"
-            width="300"
+            width="100%"
             height="200"
             title="This is a unique title"
             loading="lazy"

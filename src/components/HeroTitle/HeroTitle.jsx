@@ -11,10 +11,12 @@ import {
 } from "./HeroTitle.styled";
 import iconLogo from "../../assets/images/sprite.svg";
 import { useIsDesktopOrTablet, useIsMobile } from "../../utility/hooks";
+// import { useRef } from "react";
 const HeroTitle = () => {
   const isMobile = useIsMobile();
   const isDesktopOrDesktop = useIsDesktopOrTablet();
-  // const isT
+  // const titleEl = useRef(null);
+
   return (
     <Container>
       <Bg>

@@ -28,6 +28,13 @@ export const SectionHero = styled.section`
   @media screen and (max-width: 1279px) {
     padding: 55px 0;
   }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -44,6 +51,9 @@ export const Box = styled.div`
   @media screen and (max-width: 1279px) {
     width: 170px;
   }
+  @media screen and (max-width: 767px) {
+    width: 35vw;
+  }
 `;
 export const TextHero = styled.p`
   font-size: ${(p) => p.theme.fontSizes.s};
@@ -56,6 +66,10 @@ export const TextHero = styled.p`
     font-size: ${(p) => p.theme.fontSizes.xs};
     padding-top: 10px;
   }
+  @media screen and (max-width: 767px) {
+    font-size: ${(p) => p.theme.fontSizes.xs};
+    width: 100%;
+  }
 `;
 
 export const Img = styled.img`
@@ -66,6 +80,10 @@ export const Img = styled.img`
     height: 150px;
     width: 152px;
   }
+  @media screen and (max-width: 767px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 export const Title = styled.h2`
   font-family: ${(p) => p.theme.fonts.main};
@@ -75,6 +93,11 @@ export const Title = styled.h2`
   letter-spacing: 2px;
   @media screen and (max-width: 1279px) {
     font-size: ${(p) => p.theme.fontSizes.m};
+  }
+  @media screen and (max-width: 767px) {
+    font-size: ${(p) => p.theme.fontSizes.s};
+    width: 102px;
+    text-align: center;
   }
 `;
 
@@ -107,5 +130,9 @@ export const Button = styled.button`
   @media screen and (max-width: 1279px) {
     width: 100px;
     height: 30px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 80px;
+    height: 25px;
   }
 `;

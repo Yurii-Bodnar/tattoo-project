@@ -10,6 +10,10 @@ export const FooterWrap = styled.footer`
     justify-content: center;
     gap: 30px;
   }
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -71,6 +75,9 @@ export const MapLink = styled.a`
 export const Box = styled.div`
   display: flex;
   gap: 50px;
+  @media screen and (max-width: 768px) {
+    gap: 10px;
+  }
 `;
 export const Container = styled.div`
   display: flex;
@@ -102,6 +109,9 @@ export const TelLink = styled.a`
       transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
       color: ${(p) => p.theme.colors.main};
     }
+  }
+  @media screen and (max-width: 767px) {
+    letter-spacing: -1px;
   }
 `;
 export const TelIcon = styled.svg`

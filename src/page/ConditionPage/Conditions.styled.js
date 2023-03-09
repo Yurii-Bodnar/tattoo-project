@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import bg from "../../assets/images/background.JPG";
+import bgSmall from "../../assets/images/backgorund-small.jpg";
 
-export const BgImg = styled.div`
+export const BgImg = styled.section`
   display: flex;
   background-image: linear-gradient(
       to right,
@@ -13,10 +14,22 @@ export const BgImg = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 90px 0 30px;
-  /* position: relative; */
+  /* height: 100vh; */
+  /* height: 100%; */
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(${bgSmall});
+    padding: 10px;
+  }
 `;
 export const Container = styled.div`
   width: 50%;
@@ -44,7 +57,7 @@ export const Container = styled.div`
     background-color: ${(p) => p.theme.colors.white};
   }
   @media screen and (max-width: 1279px) {
-    width: 75%;
+    width: 70%;
   }
 `;
 export const Title = styled.h2`

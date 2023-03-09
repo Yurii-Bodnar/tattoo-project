@@ -1,20 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const MainHeader = styled.header`
-  /* background: transparent;
-
-  position: fixed;
-  width: 100vw;
-  height: 100%;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  overflow-y: auto;
-  align-items: flex-start;
-  z-index: 10; */
-`;
+export const MainHeader = styled.header``;
 export const Backdrop = styled.div`
   position: fixed;
   top: 10px;
@@ -28,11 +15,9 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 0px 69px;
   background-color: ${(p) => p.theme.colors.reserve};
-
   opacity: 0.8;
   @media screen and (max-width: 1279px) {
     padding: 0px 15px;
-    /* justify-content: center; */
   }
 `;
 export const Logo = styled(NavLink)``;
@@ -108,7 +93,7 @@ export const LinkMasters = styled.button`
       position: absolute;
       left: 0;
       width: 0;
-      height: 1.5px;
+      height: 1px;
       bottom: 0%;
       background-color: #fff;
       content: "";
@@ -132,7 +117,7 @@ export const SvgOpenClose = styled.svg`
   align-items: center;
   fill: ${(p) => p.theme.colors.white};
 `;
-export const LinkWrapper = styled.div`
+export const LinkWrapper = styled.nav`
   gap: 125px;
   display: flex;
   @media screen and (max-width: 1279px) {

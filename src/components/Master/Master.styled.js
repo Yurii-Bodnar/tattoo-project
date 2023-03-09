@@ -1,11 +1,19 @@
 import styled from "styled-components";
+import bg from "../../assets/images/backgorundSmallDolar.jpg";
 
 export const Section = styled.section`
   padding: 90px 20px 20px;
   display: flex;
   gap: 65px;
   flex-direction: column;
-  background-color: ${(p) => p.theme.colors.primary};
+  /* background-color: ${(p) => p.theme.colors.primary}; */
+  background-image: url(${bg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @media screen and (max-width: 767px) {
+    padding: 35px 10px;
+  }
 `;
 export const Container = styled.div`
   display: flex;
@@ -17,17 +25,27 @@ export const Container = styled.div`
     gap: 60px;
     width: 700px;
   }
+  @media screen and (max-width: 767px) {
+    gap: 20px;
+    width: 100%;
+  }
 `;
 export const ImgMaster = styled.img`
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 3px solid ${(p) => p.theme.colors.secondReserve};
+  border: 3px solid ${(p) => p.theme.colors.white};
   padding: 8px;
   @media screen and (max-width: 1279px) {
     width: 150px;
     height: 150px;
     padding: 5px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: none;
   }
 `;
 
@@ -46,7 +64,7 @@ export const AboutMasterText = styled.p`
     height: 2px;
     left: 0;
     top: -25px;
-    background-color: ${(p) => p.theme.colors.secondReserve};
+    background-color: ${(p) => p.theme.colors.white};
   }
   &::after {
     content: "";
@@ -55,32 +73,69 @@ export const AboutMasterText = styled.p`
     height: 2px;
     bottom: -25px;
     right: 0;
-    background-color: ${(p) => p.theme.colors.secondReserve};
+    background-color: ${(p) => p.theme.colors.white};
   }
 `;
-export const WrapList = styled.ul`
+export const WrapList = styled.div`
+  display: flex;
   margin: 0 auto;
 `;
 export const List = styled.ul`
-  /* margin: 0 auto;
   display: flex;
-  flex-flow: row wrap;
-  gap: 27px; */
-  /* width: 924px; */
-  display: flex;
-  gap: 32px;
+  gap: 30px;
+
   width: 934px;
   flex-flow: row wrap;
   @media screen and (max-width: 1279px) {
-    width: 704px;
+    width: 640px;
+    gap: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 333px;
+    gap: 3px;
+  }
+  @media screen and (max-width: 359px) {
+    width: 282px;
+    gap: 3px;
   }
 `;
-export const ImgTattoo = styled.img`
+export const Item = styled.li`
   width: 290px;
   height: 290px;
+  /* cursor: pointer; */
+  /* height: 100%; */
+  /* width: 100%; */
   @media screen and (max-width: 1279px) {
     width: 200px;
     height: 200px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 108px;
+    height: 108px;
+  }
+  @media screen and (max-width: 359px) {
+    width: 92px;
+    height: 92px;
+  }
+`;
+
+export const ImgTattoo = styled.img`
+  width: 290px;
+  height: 290px;
+  cursor: pointer;
+  /* height: 100%; */
+  /* width: 100%; */
+  @media screen and (max-width: 1279px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 108px;
+    height: 108px;
+  }
+  @media screen and (max-width: 359px) {
+    width: 92px;
+    height: 92px;
   }
 `;
 export const ModalOverlay = styled.div`
@@ -115,5 +170,9 @@ export const ModalImg = styled.img`
   @media screen and (max-width: 1279px) {
     width: 400px;
     height: 400px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 290px;
+    height: 290px;
   }
 `;

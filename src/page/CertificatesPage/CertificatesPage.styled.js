@@ -27,42 +27,17 @@ export const Item = styled.li`
   display: flex;
   gap: 20px;
   background-color: ${(p) => p.theme.colors.transparent};
+  position: relative;
   @media screen and (min-width: 1280px) {
     &::before {
       content: "";
       position: absolute;
       background-color: ${(p) => p.theme.colors.main};
-      width: 95%;
+      width: 100%;
       height: 2px;
-      left: 31px;
-      top: 383px;
-    }
-    &:nth-child(2)::before {
-      content: "";
-      position: absolute;
-      background-color: ${(p) => p.theme.colors.main};
-      width: 95%;
-      height: 2px;
-      left: 31px;
-      top: 723px;
-    }
-    &:nth-child(3)::before {
-      content: "";
-      position: absolute;
-      background-color: ${(p) => p.theme.colors.main};
-      width: 95%;
-      height: 2px;
-      left: 31px;
-      top: 1062px;
-    }
-    &:nth-child(4)::before {
-      content: "";
-      position: absolute;
-      background-color: ${(p) => p.theme.colors.main};
-      width: 95%;
-      height: 2px;
-      left: 31px;
-      top: 1403px;
+      /* left: 31px; */
+      /* top: 386px; */
+      bottom: 0;
     }
   }
 `;

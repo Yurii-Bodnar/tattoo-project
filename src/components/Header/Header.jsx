@@ -34,7 +34,6 @@ const Header = () => {
   };
 
   const closeModal = (e) => {
-    console.log(e.target, e.currentTarget);
     if (e.target === e.currentTarget) {
       setIsModalMastersOpen(false);
     }

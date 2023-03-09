@@ -15,10 +15,9 @@ export const Bg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  /* filter: blur(7px); */
-  /* position: relative; */
+
   @media screen and (max-width: 767px) {
     background-image: linear-gradient(
         to right,
@@ -35,24 +34,6 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  /* &::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    left: 0;
-    top: 170px;
-    background-color: ${(p) => p.theme.colors.white};
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 2px;
-    bottom: 170px;
-    right: 0;
-    background-color: ${(p) => p.theme.colors.white};
-  } */
 `;
 export const Logo = styled.svg`
   fill: ${(p) => p.theme.colors.white};
@@ -74,30 +55,44 @@ export const Title = styled.h1`
   margin-right: 140px;
   font-weight: ${(p) => p.theme.fontWeights.l};
   color: ${(p) => p.theme.colors.white};
+
   &::before {
     content: "";
     position: absolute;
-    width: 50%;
-    height: 2px;
+    width: 0;
+    height: 0;
     left: 0;
-    top: 215px;
+    top: 40%;
     background-color: ${(p) => p.theme.colors.white};
+    animation: runLine 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both running;
   }
   &::after {
     content: "";
     position: absolute;
     width: 50%;
     height: 2px;
-    bottom: 215px;
+    bottom: 40%;
     right: 0;
     background-color: ${(p) => p.theme.colors.white};
+    animation: runLine 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both running;
+  }
+
+  @keyframes runLine {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 50%;
+      height: 2px;
+    }
   }
   @media screen and (min-width: 1280px) {
     &::before {
-      top: 170px;
+      top: 35%;
     }
     &::after {
-      bottom: 170px;
+      bottom: 35%;
     }
   }
 
@@ -129,20 +124,32 @@ export const TitleMobile = styled.h1`
   &::before {
     content: "";
     position: absolute;
-    width: 50%;
-    height: 2px;
+    width: 0;
+    height: 0;
     left: 0;
-    top: 200px;
+    top: 40%;
     background-color: ${(p) => p.theme.colors.white};
+    animation: runLine 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both running;
   }
   &::after {
     content: "";
     position: absolute;
-    width: 50%;
-    height: 2px;
-    bottom: 200px;
+    width: 0;
+    height: 0px;
+    bottom: 40%;
     right: 0;
     background-color: ${(p) => p.theme.colors.white};
+    animation: runLine 1200ms cubic-bezier(0.4, 0, 0.2, 1) 0s 1 both running;
+  }
+  @keyframes runLine {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    100% {
+      width: 50%;
+      height: 2px;
+    }
   }
 `;
 export const TitleHidden = styled.span`
